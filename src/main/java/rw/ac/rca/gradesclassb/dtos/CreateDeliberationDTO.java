@@ -30,4 +30,17 @@ public class CreateDeliberationDTO {
 
     @Enumerated (EnumType.STRING)
     private EDecision decision;
+
+    @Override
+    public String toString() {
+        return "{" +
+                "studentId:" + studentId +
+                ", academicYear:'" + academicYear + '\'' +
+                ", totalScore:" + totalScore +
+                ", totalPassMark:" + totalPassMark +
+                ", totalOutOf:" + totalOutOf +
+                ", position:" + position +
+                ", decision:" + decision +
+                '}';
+    }
 }
