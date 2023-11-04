@@ -13,6 +13,23 @@ public class SimpleCalculatorTest {
         int expected  = 5;
         Assert.assertEquals(actual,expected);
     }
+
+    @Test
+    void givenTwoNumbers_whenSubstructed_ReturnDifference(){
+        Assert.assertEquals(SimpleCalculator.substruct(4,2), 2);
+    }
+    @Test
+
+    void givenZeroAndAnumber_whenSubstructed_ReturnAnegativeOfAnumber(){
+        Assert.assertEquals(SimpleCalculator.substruct(0,4), -4);
+    }
+
+    @Test
+    void givenTwoZeroes_whenSubstructed_ReturnZero(){
+        Assert.assertEquals(SimpleCalculator.substruct(0,0),0);
+    }
+
+
     @Test
     void givenZeroValues_whenAdded_returnZero(){
         int actual = SimpleCalculator.add(0,0);
